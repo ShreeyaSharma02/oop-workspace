@@ -17,8 +17,8 @@ int get_Current_Number_of_Units(int currentunit){
     cout<<currentunit<<endl;
     return currentunit;
 }; 
-Unit * get_Contents(int* max){
-    cout<<max<<endl;
+Unit * get_Contents(int* get_Capacity){
+    cout<<get_Capacity<<endl;
     return 0;
 }
 bool add_Unit(Unit unit){
