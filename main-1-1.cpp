@@ -11,6 +11,5 @@ int main(){
     kettle.turnOff();
     kettle.turnOn();
     cout<<kettle.get_isOn()<<endl;
-    cout<<kettle.getpowerconsumption()<<endl;
     return 0;
 }

@@ -1,15 +1,13 @@
-#include<iostream>
+#include "Fridge.h"
 #include "Appliance.h"
+#include"TV.h"
+#include<iostream>
 using namespace std;
 int main(){
-    Appliance kettle;
-    kettle.set_powerRating(56);
-    kettle.set_isOn(false);
-    cout<<kettle.get_powerRating()<<endl; //works
-    cout<<kettle.get_isOn()<<endl;
-    cout<<kettle.getpowerconsumption()<<endl;
-    kettle.turnOff();
-    kettle.turnOn();
-    cout<<kettle.get_isOn()<<endl;
+    TV sony;
+    sony.set_powerRating(50);
+    sony.setScreenSize(29);
+    cout<<sony.getScreenSize()<<endl;
+    cout<<sony.getPowerConsumption()<<endl;
     return 0;
 }

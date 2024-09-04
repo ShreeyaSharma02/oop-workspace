@@ -33,7 +33,8 @@ void Appliance::turnOn(){
 void Appliance::turnOff(){
     this->set_isOn(false);
 }
-double Appliance::getpowerconsumption() { 
+double Appliance::getpowerconsumption() const{ 
     return 0.0;
 }
+
 

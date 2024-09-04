@@ -1,15 +1,15 @@
-#include<iostream>
 #include "Appliance.h"
+#include "Fridge.h"
+#include"TV.h"
+#include "House.h"
+#include<iostream>
 using namespace std;
 int main(){
-    Appliance kettle;
-    kettle.set_powerRating(56);
-    kettle.set_isOn(false);
-    cout<<kettle.get_powerRating()<<endl; //works
-    cout<<kettle.get_isOn()<<endl;
-    cout<<kettle.getpowerconsumption()<<endl;
-    kettle.turnOff();
-    kettle.turnOn();
-    cout<<kettle.get_isOn()<<endl;
+    House h(3); //using parameter constructor to create 3 appliances
+    Appliance* tv = new TV(150, 42);      
+    Appliance* fridge = new Fridge(200, 350);
+    h.addAppliance(tv);
+    h.addAppliance(fridge);
+    cout<<h.getTotalPowerConsumption()<<endl;
     return 0;
 }
