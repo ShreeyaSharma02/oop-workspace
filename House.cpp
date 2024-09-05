@@ -1,6 +1,4 @@
-// #include "Fridge.h"
 #include "Appliance.cpp"
-// #include"TV.h"
 #include"House.h"
 #include<iostream>
 using namespace std;
