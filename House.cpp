@@ -1,6 +1,6 @@
-#include "Fridge.h"
-#include "Appliance.h"
-#include"TV.h"
+// #include "Fridge.h"
+#include "Appliance.cpp"
+// #include"TV.h"
 #include"House.h"
 #include<iostream>
 using namespace std;
@@ -12,25 +12,25 @@ House::House(){
 House::House(int numappliances){
     this->numAppliances=numappliances;
     this->currentAppliances=0;
-    this->appliances=new Appliance*[numAppliances]; //didn't get 
+    this->appliances=new Appliance*[numAppliances]; // Dynamic array of Appliance pointer
 }
 House::~House(){
-    for(int i=0;i<currentAppliances;i++){ //destructor arguments didn't get
+    for(int i=0;i<currentAppliances;i++){ //deletes every item in appliance
         delete this->appliances[i];
     }
-    delete[] this->appliances;
+    delete[] this->appliances; //deletes array of apppliance
 }
 bool House::addAppliance(Appliance* appliance){
     if(currentAppliances<numAppliances){
-        appliances[currentAppliances++]=appliance;
+        appliances[currentAppliances++]=appliance; //appliances array has index at every currentappliances where the appliance which we add will be added to array
         return true;
     }
     return false;
 }
-double House::getTotalPowerConsumption() const{
+double House::getTotalPowerConsumption(){
     double totalPowerConsumption=0.0;
     for(int i=0;i<currentAppliances;i++){
-        totalPowerConsumption+=appliances[i]->getpowerconsumption();
+        totalPowerConsumption+=appliances[i]->getpowerconsumption(); // since appliances[i] is an array of pointer to appliance objects we use this pointer method to access the function
     }
     return totalPowerConsumption;
 }

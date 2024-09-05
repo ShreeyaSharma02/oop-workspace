@@ -1,8 +1,8 @@
-#include "Appliance.h"
+#include<iostream>
 #include "Fridge.h"
 #include"TV.h"
 #include "House.h"
-#include<iostream>
+// #include"Appliance.h"
 using namespace std;
 int main(){
     House h(3); //using parameter constructor to create 3 appliances

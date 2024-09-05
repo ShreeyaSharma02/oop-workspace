@@ -10,6 +10,6 @@ class Fridge: public Appliance{
     Fridge(int powerRating, double volume);
     void setVolume(double volume);
     double getVolume() const;
-    double getpowerconsumption() const override;
+    double getpowerconsumption() override;
 };
 #endif

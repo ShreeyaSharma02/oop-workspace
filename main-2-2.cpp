@@ -1,5 +1,3 @@
-#include "Fridge.h"
-#include "Appliance.h"
 #include"TV.h"
 #include<iostream>
 using namespace std;

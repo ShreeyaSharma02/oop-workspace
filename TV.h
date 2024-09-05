@@ -1,5 +1,6 @@
+#ifndef TV_H
+#define TV_H
 #include "Appliance.h"
-#include "Fridge.h"
 #include<iostream>
 using namespace std;
 class TV: public Appliance{
@@ -12,3 +13,4 @@ class TV: public Appliance{
         double getScreenSize() const;
         double getPowerConsumption() const;
 };
+#endif
