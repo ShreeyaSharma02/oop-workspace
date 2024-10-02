@@ -1,5 +1,7 @@
 #include "Airplane.h"
-#include "AirCraft.cpp"
+#ifndef AIRPLANE_H
+#define AIRPLANE_H
+// #include "AirCraft.cpp"
 #include<iostream>
 using namespace std;
 Airplane::Airplane(){
@@ -26,3 +28,4 @@ void Airplane::fly(int headwind, int minutes){
         this->numberOfFlights=numberOfFlights;
     }
 }
+#endif
