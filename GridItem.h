@@ -7,9 +7,10 @@ class GridItem{
     protected:
     int GridWidth;
     int GridHeight;
+    int GridCount;
     public:
     GridItem(int x, int y, int width, int height)
-        :GridItem(0,0,GridWidth,GridHeight){}
+        :GridItem(){}
     GridItem(){}
     void setCoordinates(int x, int y);
     std::pair<int,int>getCoordinates(int x, int y){
@@ -22,7 +23,7 @@ class GridItem{
         return GridHeight;
     }
     int getActiveGridItemCount(){
-        return 
+        return GridCount;
     }
     virtual ~GridItem();  
 };
